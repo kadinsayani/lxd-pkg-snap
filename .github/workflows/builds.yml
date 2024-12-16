@@ -30,7 +30,6 @@ jobs:
           ssh-key: "${{ secrets.LAUNCHPAD_LXD_BOT_KEY}}"
 
       - name: Trigger Launchpad snap build
-        env:
         run: |
           set -eux
           localRev="$(git rev-parse HEAD)"
